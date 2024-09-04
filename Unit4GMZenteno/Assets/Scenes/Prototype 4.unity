@@ -352,7 +352,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0565f58bf5ea89c4da41ecfa5562aa02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 7075937470153045720, guid: 9911dacd9ade2c6449edc7fb0c1c3e07, type: 3}
+  enemyPrefabs:
+  - {fileID: 7075937470153045720, guid: 9911dacd9ade2c6449edc7fb0c1c3e07, type: 3}
+  - {fileID: 2542721476699789601, guid: cf269c9930a954745adfad26c398fd49, type: 3}
   enemyCount: 0
   waveNumber: 1
   powerupPrefab: {fileID: 1731339712709837750, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
@@ -616,6 +618,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23564663788724664, guid: 961be46ca9a355943ae3f65c47741bb0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e6e6f7a3c9f4839409af1eae15839382, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 961be46ca9a355943ae3f65c47741bb0, type: 3}
 --- !u!1 &1403545341 stripped

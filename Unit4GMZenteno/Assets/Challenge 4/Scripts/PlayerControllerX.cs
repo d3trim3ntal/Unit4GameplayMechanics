@@ -7,6 +7,7 @@ public class PlayerControllerX : MonoBehaviour
     private Rigidbody playerRb;
     private float speed = 500;
     private GameObject focalPoint;
+    public GameObject smokeEffect;
 
     public bool hasPowerup;
     public GameObject powerupIndicator;
@@ -39,6 +40,8 @@ public class PlayerControllerX : MonoBehaviour
         {
             Destroy(other.gameObject);
             hasPowerup = true;
+            StartCoroutine(PowerupCooldown());
+
             powerupIndicator.SetActive(true);
         }
     }
@@ -71,7 +74,5 @@ public class PlayerControllerX : MonoBehaviour
 
         }
     }
-
-
 
 }
