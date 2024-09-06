@@ -29,4 +29,18 @@ public class RocketBehavior : MonoBehaviour
         Destroy(gameObject, aliveTimer);
 
     }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (target != null)
+        {
+            if (col.gameObject.CompareTag(target.tag))
+            {
+                Rigidbody targetRigidbody = col.gameObject.GetComponent<Rigidbody>();
+                Vector3 away = -col.contacts[0].normal;
+                targetRigidbody.AddForce(away * rocketStrength, ForceMode.Impulse);
+                Destroy(gameObject);
+            }
+        }
+    }
 }

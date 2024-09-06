@@ -323,6 +323,76 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
+--- !u!1001 &740658709
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1216473507782272887, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: powerUpType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731339712709837750, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_Name
+      value: PowerUpSmash
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733327194563749624, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733327194563749624, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733327194563749624, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733327194563749624, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733327194563749624, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733327194563749624, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733327194563749624, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733327194563749624, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733327194563749624, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733327194563749624, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733327194563749624, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1752691232326070538, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e4320eef284309b43ad360a21f078328, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+--- !u!1 &740658710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1731339712709837750, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+  m_PrefabInstance: {fileID: 740658709}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &972274209
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +425,10 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 7075937470153045720, guid: 9911dacd9ade2c6449edc7fb0c1c3e07, type: 3}
   - {fileID: 2542721476699789601, guid: cf269c9930a954745adfad26c398fd49, type: 3}
+  powerupPrefabs:
+  - {fileID: 1731339712709837750, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
+  - {fileID: 1731339712709837750, guid: fcbefd621eb3da1458abcc3a9522ef7e, type: 3}
+  - {fileID: 740658710}
   enemyCount: 0
   waveNumber: 1
   powerupPrefab: {fileID: 1731339712709837750, guid: 6e9530fef9e77174f8fdb984e47c1c46, type: 3}
@@ -757,6 +831,12 @@ MonoBehaviour:
   speed: 5
   hasPowerUp: 0
   powerupIndicator: {fileID: 238179001}
+  currentPowerUp: 0
+  rocketPrefab: {fileID: 1156830325511183456, guid: 10c05339ed1edf442b31ffd3322ab8f7, type: 3}
+  hangTime: 1
+  smashSpeed: 10
+  explosionForce: 10
+  explosionRadius: 6
 --- !u!54 &2004921021
 Rigidbody:
   m_ObjectHideFlags: 0
